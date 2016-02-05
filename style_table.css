@@ -1,0 +1,19 @@
+caption {
+	font-weight: bold;
+	font-size: 1.2em
+}
+table {
+	border: 3px solid navy;
+}
+td, th {
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid navy;
+}
+th {
+	background: pink;
+}
+.pad{
+	padding: 2px;
+	margin: 2px;
+}

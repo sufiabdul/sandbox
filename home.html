@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>Survey Feedback</title>
+		<meta charset = "utf-8" />
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style_table.css"  />
+		<script type="text/javascript" src="jquery.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Survey Feedback</h1>
+				<form class="form-horizontal" method = "post" action = "">
+					<div class="form-group">
+						<label class="control-label col-sm-1">Name:</label>
+						<div class="col-sm-11" >
+							<input class="form-control" type="text" name="name" size="50" maxlength="35" placeholder="Enter Name"/>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-1">Address:</label>
+						<div class="col-sm-11" >
+							<input  class="form-control" type="text" name = "address" size = "50" placeholder="Enter Address"/>
+
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-1">Email:</label>
+						<div class="col-sm-11" >
+							<input  class="form-control" type="email" name = "myEmail" size = "50" placeholder="Enter Email"/>
+						</div>
+					</div>
+					<div class="form-group">
+						<div>
+							<em>Favorite things on campus:</em>
+							<div class="checkbox">
+								<label class="pad">
+									<input  type="checkbox" name="webpro[]" value="Student"/>
+									Student </label>
+								<label class="pad">
+									<input  type="checkbox" name="webpro[]" value="Location" />
+									Location </label>
+								<label class="pad">
+									<input type="checkbox" name="webpro[]" value="Campus" />
+									Campus </label>
+								<label class="pad">
+									<input type="checkbox" name="webpro[]" value="Atmosphere" />
+									Atmosphere </label>
+								<label class="pad">
+									<input type="checkbox" name="webpro[]" value="DormRooms" />
+									Dorm rooms </label>
+								<label class="pad">
+									<input type="checkbox" name="webpro[]" value="Sports" />
+									Sports </label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div>
+							How did you became interested in South Dakota State Unversity?
+						</div><br/>
+						<div>
+							<div class="btn-group" data-toggle="buttons">
+								<label class="btn btn-default">Friends
+									<input type="radio" name="dbclass" value = "Friends"/>
+								</label>
+								<label class="btn btn-default">Television
+									<input type="radio" name="dbclass" value = "Television" />
+								</label>
+								<label class="btn btn-default">Internet
+									<input type="radio" name="dbclass" value = "Internet" />
+								</label>
+								<label class="btn btn-default">Others
+									<input type="radio" name="dbclass" value = "Others" />
+								</label>
+							</div>
+						</div><br/>
+						<div>
+							<textarea id="othersInfo" class="form-control collapse" placeholder="Others" name = "others" rows="6"></textarea>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label>Additional Comments:</label>
+						<br />
+						<textarea class="form-control" placeholder="Additional Comments" name = "suggestion" rows="6"></textarea>
+					</div>
+					<div class="form-group">
+						<input id="submitRequest" class="btn btn-info btn-lg" type = "submit" value = "Submit" />
+						<input class="btn btn-info btn-lg" type = "reset" value = "Reset" />
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
